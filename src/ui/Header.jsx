@@ -3,7 +3,7 @@ import RightContent from "./RightContent";
 import SearchInput from "./SearchInput";
 function Header() {
   return (
-    <header className="flex bg-slate-50 h-11 py-1.5 px-3 items-center justify-between">
+    <header className="flex bg-slate-50 h-15 py-1.5 px-3 items-center justify-between">
       <div className="flex-shrink-0">
         <Logo />
       </div>

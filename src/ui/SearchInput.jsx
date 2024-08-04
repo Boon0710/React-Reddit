@@ -9,7 +9,7 @@ function SearchInput() {
             <input
               type="text"
               placeholder="Search Reddit"
-              className="block w-full pl-10 p-2.5 text-sm border border-gray-300 rounded-md bg-gray-50 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-96 rounded-full"
+              className="block w-full pl-10 p-2.5 text-base border border-gray-300 rounded-md bg-gray-50 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-96 rounded-full"
             />
           </div>
         </div>
