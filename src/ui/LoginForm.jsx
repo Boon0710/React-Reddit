@@ -11,15 +11,18 @@ import { login } from "../services/apiAuthen";
 
 import { ModalContext } from "./Modal";
 import { useMutation } from "@tanstack/react-query";
+import { useAuth } from "../context/AuthContext";
 import toast from "react-hot-toast";
+
 function LoginForm({ onCloseModal }) {
   const { register, handleSubmit, reset, getValues, formState } = useForm();
+  const {login: setAuth} = useAuth();
   const {mutate} = useMutation({
     mutationFn: login,
     onSuccess: (data) => {
+      setAuth(data.token);
       console.log("Received token:", data.token); 
       toast.success("Log in succesfully")
-      localStorage.setItem('token', data.token);
       reset()
       onCloseModal?.()
     },

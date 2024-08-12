@@ -1,7 +1,10 @@
+import PostItem from "../features/post/PostItem"
+
+
 function HomePage() {
     return (
         <div>
-            HomePage
+            <PostItem />
         </div>
     )
 }
